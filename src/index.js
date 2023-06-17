@@ -10,7 +10,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Welcome from './components/Welcome';
 import Contact from './components/Contact';
-import Resume from './components/Resume';
 
 const router = createBrowserRouter([
   {
@@ -24,10 +23,6 @@ const router = createBrowserRouter([
   {
     path: '/contact',
     element: <Contact />
-  },
-  {
-    path: '/resume',
-    element: <Resume />
   },
   {
     path: '/about',
