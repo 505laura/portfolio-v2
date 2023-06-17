@@ -17,7 +17,7 @@ const TechLists = Technologies.map((row) => (
 function About() {
   return (
     // TODO: Fix repeated code
-    <div className='w-3/4 mx-auto pt-32 flex align-start'>
+    <div className='w-3/4 mx-auto pt-16 flex align-start'>
       <div className='w-3/4 mx-auto flex align-start'>
         <div>
           <div className='flex items-center py-4 align-baseline'>
