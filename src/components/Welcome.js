@@ -5,8 +5,8 @@ function Welcome() {
   return (
     <div>
      {/* TODO: Change font size and top/bottom padding when in a smaller screen */}
-    <section className='w-2/3 mx-auto pt-28 pb-36'>
-      <div className='w-2/3 mx-auto'>
+    <section className='w-3/4 mx-auto pt-32'>
+      <div className='w-3/4 mx-auto'>
         <p className='text-accent text-3xl font-semibold mb-4'>
             Hi, I'm Laura.
         </p>
