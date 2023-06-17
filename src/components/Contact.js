@@ -44,7 +44,7 @@ function Contact() {
       <div className="mx-auto w-3/4">
         <h1 className="text-4xl font-medium">Contact me</h1>
         {/* Make email clickable */}
-        <p className="mt-3">Send me an email at <a href="mailto:laura@505laura.com">laura@505laura.com</a> or message me here:</p>
+        <p className="mt-3">Send me an email at <a href="mailto:laura@505laura.com" className="hover:text-accent">laura@505laura.com</a> or message me here:</p>
 
         <form ref={form} onSubmit={sendEmail} onChange={resetError} className="mt-10">
           <div className="grid gap-6 sm:grid-cols-2">
@@ -69,7 +69,7 @@ function Contact() {
           </div>
 
           <div>
-            <p id="form_error" className={"text-red-500 " + (error === '' ? 'invisible' : '')}>{error}</p>
+            <p id="form_error" className={"text-red-500 pt-4 " + (error === '' ? 'invisible' : '')}>{error}</p>
           </div>
 
           <button id="submit" type="submit" className={"mt-5 rounded-md px-10 py-2 text-black " + (success ? "bg-gray-500" : "bg-accent")}>
