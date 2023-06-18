@@ -8,6 +8,7 @@ module.exports = {
         accent: '#9dbebb',
         header: '#d9cab3',
         cards: "#1c2541",
+        tags: "#1f7a8c"
       }
     },
   },
