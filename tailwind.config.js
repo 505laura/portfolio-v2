@@ -7,6 +7,7 @@ module.exports = {
         offWhite: '#f4e9cd',
         accent: '#9dbebb',
         header: '#d9cab3',
+        cards: "#1c2541",
       }
     },
   },
