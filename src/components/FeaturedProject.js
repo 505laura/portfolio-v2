@@ -8,7 +8,7 @@ function FeaturedProject(props) {
       <div className='flex max-w-sm'>
         <img src={props.project} alt="Featured project"  className="pr-4"/>
       </div>
-      <div className='grid content-between'>
+      <div className='grid content-between w-full'>
         <div>
           <div className="flex justify-between">
             <h3 className='text-offWhite font-semibold text-lg pr-10 hover:text-accent'>
@@ -22,13 +22,13 @@ function FeaturedProject(props) {
           </div>
           <hr className="my-2 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
           <p className='text-gray-500'>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            {props.description}
           </p>
         </div>
-        <div>
-          <p className='text-accent font-semibold text-xs pb-1'>
-            {props.tags}
-          </p>
+        <div className='flex'>
+            {(props.tags ?? []).map((tag)=>{
+              return (<p className='text-accent pr-3 font-semibold text-xs pb-1'>{tag}</p>)
+            })}
         </div>
       </div>
     </a>

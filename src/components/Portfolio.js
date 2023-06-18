@@ -7,14 +7,13 @@ import TechBlog from '../tech-blog.gif';
 function Portfolio() {
   return (
     <div className='w-3/4 mx-auto pt-8'>
-      {/* <h2 className='w-3/4 text-4xl text-offWhite pb-5'>
-        Portfolio
-      </h2> */}
+      <h2 className='text-4xl text-offWhite font-semibold pb-8 items-center w-3/4'>
+        Featured Projects
+      </h2>
       {/*  TODO: Edit Habivox gif */}
-      <FeaturedProject project={Cityspire} title="Habivox" github="habivox" website="https://habivox.com/" tags=""></FeaturedProject>
-      {/* TODO: Clone cityspire repo */}
-      <FeaturedProject project={Cityspire} title="CitySpire" github="cityspire" website="https://jpjp2328.github.io/Cityspire/" tags=""></FeaturedProject>
-      <FeaturedProject project={TechBlog} title="Tech Blog" github="tech-blog" website="https://laura505-tech-blog.herokuapp.com/" tags=""></FeaturedProject>
+      <FeaturedProject project={Cityspire} title="Habivox" github="habivox" website="https://habivox.com/" description="Habivox is an innovative website designed to transform habit-making into an exciting game-like experience. By combining the power of gamification and habit formation, Habivox motivates users to develop positive daily routines. Users embark on virtual quests, earning experience points and unlocking achievements as they successfully cultivate habits like exercise, reading, meditation, and more." tags={['html', 'tailwind css', 'next.js', 'react', 'jest', 'graphql', 'jwt', 'zod', 'mongoose', 'bcrypt', '@apollo/client']}></FeaturedProject>
+      <FeaturedProject project={Cityspire} title="CitySpire" github="cityspire" website="https://jpjp2328.github.io/Cityspire/" description="Cityspire is an immersive website designed to inspire and aid travel enthusiasts in planning their next adventure. Users can select any city across the globe and receive information about it; they are able to view images of it, explore the city's upcoming events and attractions, and view an up-to-date weather report, while an interactive map provides a visual guide to navigate the area. This project was built through a collaboration with two other developers." tags={['figma', 'html', 'tailwind css', 'jquery', 'openweathermap', 'google maps API', 'google places API']}></FeaturedProject> 
+      <FeaturedProject project={TechBlog} title="The Tech Blog" github="tech-blog" website="https://laura505-tech-blog.herokuapp.com/" description="The Tech Blog is a user-friendly, CMS-style blog site exclusively designed for developers to share their thoughts and opinions on a variety of tech-related topics. It provides a streamlined platform where developers can easily create and publish blog posts, showcasing their expertise and insights." tags={['html', 'tailwind css', 'node.js', 'express.js', 'handlebars', 'mysql', 'sequelize', 'bcrypt', 'express-session', 'heroku']}></FeaturedProject>
       <h3 className='flex text-2xl text-offWhite font-semibold py-5 items-center'>
         Some other projects
       <div class="flex-grow h-[2px] ml-4 bg-accent"></div>
