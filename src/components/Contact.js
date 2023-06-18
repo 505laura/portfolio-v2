@@ -43,7 +43,6 @@ function Contact() {
     <div className="flex pt-16 mx-auto text-offWhite w-3/4">
       <div className="mx-auto w-3/4">
         <h1 className="text-4xl font-medium">Contact me</h1>
-        {/* Make email clickable */}
         <p className="mt-3">Send me an email at <a href="mailto:laura@505laura.com" className="hover:text-accent">laura@505laura.com</a> or message me here:</p>
 
         <form ref={form} onSubmit={sendEmail} onChange={resetError} className="mt-10">
@@ -72,7 +71,7 @@ function Contact() {
             <p id="form_error" className={"text-red-500 pt-4 " + (error === '' ? 'invisible' : '')}>{error}</p>
           </div>
 
-          <button id="submit" type="submit" className={"mt-5 rounded-md px-10 py-2 text-black " + (success ? "bg-gray-500" : "bg-accent")}>
+          <button id="submit" type="submit" className={"mt-5 rounded-md px-10 py-2 text-black hover:bg-blue-100 " + (success ? "bg-gray-500" : "bg-accent")}>
             {success ?  "Message sent!" : "Send Message"}
           </button>
         </form>
