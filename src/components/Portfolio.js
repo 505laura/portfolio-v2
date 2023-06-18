@@ -11,9 +11,10 @@ function Portfolio() {
         Portfolio
       </h2> */}
       {/*  TODO: Edit Habivox gif */}
-      <FeaturedProject project={Cityspire} title="Habivox"></FeaturedProject>
-      <FeaturedProject project={Cityspire} title="CitySpire"></FeaturedProject>
-      <FeaturedProject project={TechBlog} title="Tech Blog"></FeaturedProject>
+      <FeaturedProject project={Cityspire} title="Habivox" github="habivox" website="https://habivox.com/" tags=""></FeaturedProject>
+      {/* TODO: Clone cityspire repo */}
+      <FeaturedProject project={Cityspire} title="CitySpire" github="cityspire" website="https://jpjp2328.github.io/Cityspire/" tags=""></FeaturedProject>
+      <FeaturedProject project={TechBlog} title="Tech Blog" github="tech-blog" website="https://laura505-tech-blog.herokuapp.com/" tags=""></FeaturedProject>
       <h3 className='flex text-2xl text-offWhite font-semibold py-5 items-center'>
         Some other projects
       <div class="flex-grow h-[2px] ml-4 bg-accent"></div>
