@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Cityspire from '../Cityspire.gif';
-import CodeQuiz from '../code-quiz.gif';
-import TechBlog from '../tech-blog.gif';
 
 // Resize gifs so that they are consistent
 
@@ -9,7 +6,7 @@ function FeaturedProject(props) {
   return (
     <div className='flex pb-10'>
       <div className='flex max-w-sm'>
-        <img src={Cityspire} alt="Featured project"  className="pr-4"/>
+        <img src={props.project} alt="Featured project"  className="pr-4"/>
       </div>
       <div className='grid content-between'>
         <div>

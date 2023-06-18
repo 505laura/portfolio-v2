@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import FeaturedProject from './FeaturedProject';
 import Project from './Project';
+import Cityspire from '../Cityspire.gif';
+import TechBlog from '../tech-blog.gif';
 
 function Portfolio() {
   return (
@@ -8,9 +10,10 @@ function Portfolio() {
       {/* <h2 className='w-3/4 text-4xl text-offWhite pb-5'>
         Portfolio
       </h2> */}
-      <FeaturedProject title="Habivox"></FeaturedProject>
-      <FeaturedProject title="CitySpire"></FeaturedProject>
-      <FeaturedProject title="Tech Blog"></FeaturedProject>
+      {/*  TODO: Edit Habivox gif */}
+      <FeaturedProject project={Cityspire} title="Habivox"></FeaturedProject>
+      <FeaturedProject project={Cityspire} title="CitySpire"></FeaturedProject>
+      <FeaturedProject project={TechBlog} title="Tech Blog"></FeaturedProject>
       <h3 className='flex text-2xl text-offWhite font-semibold py-5 items-center'>
         Some other projects
       <div class="flex-grow h-[2px] ml-4 bg-accent"></div>
